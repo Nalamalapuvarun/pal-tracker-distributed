@@ -14,7 +14,8 @@ DROP DATABASE IF EXISTS tracker_registration_test;
 
 DROP DATABASE IF EXISTS tracker_timesheets_test;
 
-
+CREATE USER IF NOT EXISTS 'tracker'@'localhost'
+  identified by '';
 GRANT ALL PRIVILEGES ON *.* TO 'tracker' @'localhost';
 
 
